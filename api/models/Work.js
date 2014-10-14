@@ -8,7 +8,7 @@
 module.exports = {
 
   attributes: {
-    title: 'string',
+    title:   'string',
     content: 'text'
   }
 };

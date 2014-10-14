@@ -5,6 +5,8 @@
   "description": "a Sails application",
   "keywords": [],
   "dependencies": {
+    "angular": "^1.3.0-rc.5",
+    "angular-ui-router": "^0.2.11",
     "ejs": "~0.8.4",
     "grunt": "0.4.2",
     "grunt-contrib-clean": "~0.5.0",
@@ -19,6 +21,7 @@
     "grunt-sails-linker": "~0.9.5",
     "grunt-sync": "~0.0.4",
     "include-all": "~0.1.3",
+    "npm-angular-resource": "^1.3.0-build.2880",
     "rc": "~0.5.0",
     "sails": "~0.10.5",
     "sails-disk": "~0.10.0",

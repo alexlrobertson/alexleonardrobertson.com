@@ -8,9 +8,11 @@
 module.exports = {
 
   attributes: {
-    src: 'string',
-    width: 'integer',
-    height: 'integer'
+    src:    'string',
+    crops:  {
+      collection: 'crop',
+      via:        'image'
+    }
   }
 };
 

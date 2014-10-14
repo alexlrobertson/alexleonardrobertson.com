@@ -8,8 +8,8 @@
 module.exports = {
 
   attributes: {
-    src: 'string',
-    width: 'integer',
+    src:    'string',
+    width:  'integer',
     height: 'integer',
     image: {
       model: 'image'

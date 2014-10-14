@@ -1,0 +1,36 @@
+<div class="container">
+  <h1>New Process</h1>
+
+  <form class="form" name="newProcessForm">
+    <div class="form-group" validate-group="newProcessForm.title">
+      <label for="title">Title</label>
+      <input type="text"
+        id="title"
+        name="title"
+        class="form-control"
+        required
+        ng-model="process.data.title"
+        ng-minlength="3"
+        >
+      <div class="help-block"
+        ng-if="newProcessForm.title.$error.minlength && newProcessForm.title.$dirty">Invalid length</div>
+    </div>
+    <div class="form-group" validate-group="newProcessForm.slug">
+      <label for="slug">Slug</label>
+      <input type="text"
+        class="form-control"
+        id="slug"
+        name="slug"
+        required
+        ng-model="process.data.slug"
+        ng-pattern="/^[a-z0-9]+$/"
+        slugify="process.data.title"
+        ng-minlength="3"
+        >
+      <div class="help-block"
+        ng-if="newProcessForm.slug.$error.pattern && newProcessForm.slug.$dirty">Slugs must only contain lower case, alphanumeric characters and dashes.</div>
+      <div class="help-block"
+        ng-if="newProcessForm.slug.$error.minlength && newProcessForm.slug.$dirty">Invalid length</div>
+    </div>
+  </form>
+</div>

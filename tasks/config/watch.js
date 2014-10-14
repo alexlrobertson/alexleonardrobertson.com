@@ -27,7 +27,11 @@ module.exports = function(grunt) {
 
 			// When assets are changed:
 			tasks: ['syncAssets' , 'linkAssets']
-		}
+		},
+    admin: {
+      files: ['**/admin.*.html'],
+      tasks: ['ngtemplates:alr.admin']
+    }
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-watch');

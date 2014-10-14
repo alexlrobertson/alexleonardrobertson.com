@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Process</h1>
+
+  <a ui-sref="process.new">Add New</a>
+
+  <table>
+    <tr ng-repeat="item in process.items">
+      <td>
+        <a ui-sref="process.detail({slug: item.slug})"
+          ng-bind-html="item.title"></a>
+      </td>
+    </tr>
+  </table>
+</div>
